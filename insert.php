@@ -1,4 +1,7 @@
 <?php
+	session_start();
+	if ($_SESSION['rows'] == 1)
+	{
 	include 'conn.php';
 	if (isset($_POST['done']))
 	{
@@ -13,6 +16,11 @@
 	{
 		header('location:display.php');
 	}
+	}
+	else
+	{
+		header("Location: login.php");
+	}
 ?>
 <!DOCTYPE html>
 <html>
@@ -25,7 +33,7 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-	<div class="col-lg-6 m-auto"><br><div class="col-lg-3 m-auto"><a href="login.php" class="text-white"><button class="btn btn-outline-danger col-lg-12">Logout</button></a></div><br>
+	<div class="col-lg-6 m-auto"><br><div class="col-lg-3 m-auto"><a href="logout.php" class="text-white"><button class="btn btn-outline-danger col-lg-12">Logout</button></a></div><br>
 		<form method="post">
 			<div class="card">
 				<div class="card-header bg-warning">

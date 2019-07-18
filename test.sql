@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 15, 2019 at 06:30 AM
+-- Generation Time: Jul 18, 2019 at 07:15 AM
 -- Server version: 10.3.15-MariaDB
 -- PHP Version: 7.3.6
 
@@ -39,7 +39,7 @@ CREATE TABLE `userpass` (
 --
 
 INSERT INTO `userpass` (`id`, `user`, `pass`) VALUES
-(1, 'arsalan', '12345');
+(1, 'arsalan', '827ccb0eea8a706c4c34a16891f84e7b');
 
 --
 -- Indexes for dumped tables

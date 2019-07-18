@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 15, 2019 at 06:30 AM
+-- Generation Time: Jul 18, 2019 at 07:15 AM
 -- Server version: 10.3.15-MariaDB
 -- PHP Version: 7.3.6
 
@@ -41,10 +41,11 @@ CREATE TABLE `records` (
 --
 
 INSERT INTO `records` (`id`, `firstname`, `lastname`, `address`, `contact`) VALUES
-(105, 'Arsalan', 'Amin', '159-B Audit & Accounts Housing Society Lahore', '03228963430'),
 (107, 'Bilal', 'Ahmed', 'House#8 Wahdat Link Road', '03224523658'),
 (108, 'Zain', 'Iqbal', '35-C Township', '03452514789'),
-(109, 'Waleed', 'Chaudhary', '254-D Johar Town', '03002145896');
+(109, 'Waleed', 'Chaudhary', '254-D Johar Town', '03002145896'),
+(121, 'Shahid', 'Shaukat', 'Cantt Lahore', '03054534020'),
+(122, 'Arsalan', 'Amin', '159-B Audit & Accounts Housing Society Lahore', '03228963430');
 
 --
 -- Indexes for dumped tables
@@ -64,7 +65,7 @@ ALTER TABLE `records`
 -- AUTO_INCREMENT for table `records`
 --
 ALTER TABLE `records`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=121;
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=123;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

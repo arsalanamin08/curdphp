@@ -9,8 +9,8 @@ if(isset($_POST['submit']))
 	}
 	else
 	{
-		$user=($_POST['user']);
-		$pass=md5($_POST['pass']);
+		$user=($_POST['user']);			//username=arsalan
+		$pass=md5($_POST['pass']);		//password=12345
 		echo "$user<br>";
 		echo "$pass<br>";
 		$conn = mysqli_connect("localhost", "root", "");

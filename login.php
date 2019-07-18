@@ -9,10 +9,11 @@ if(isset($_POST['submit']))
 	}
 	else
 	{
-		$user=($_POST['user']);			//username=arsalan
-		$pass=md5($_POST['pass']);		//password=12345
-		echo "$user<br>";
-		echo "$pass<br>";
+		$user=($_POST['user']);
+		$pass=md5($_POST['pass']);
+		echo "Username: arsalan<br>";		//username=arsalan
+		echo "Password: 12345<br>";			//password=12345
+		echo "Encrypted Password: $pass<br>";
 		$conn = mysqli_connect("localhost", "root", "");
 		$db = mysqli_select_db($conn, "test");
 		$query = mysqli_query($conn, "SELECT * FROM userpass WHERE pass='$pass' AND user='$user'");
